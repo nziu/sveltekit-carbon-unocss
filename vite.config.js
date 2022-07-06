@@ -6,16 +6,20 @@ const production = process.env.NODE_ENV === 'production';
 
 /** @type {import('vite').UserConfig} */
 const config = {
+  server: {
+    strictPort: false
+  },
   plugins: [
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     UnoCss(),
 
+    // https://github.com/sveltejs/kit
     sveltekit(),
 
+    // https://purgecss.com/safelisting.html
     production &&
       optimizeCss({
-        // https://purgecss.com/safelisting.html
         safelist: {
           standard: ['theme', '--unocss--']
         }

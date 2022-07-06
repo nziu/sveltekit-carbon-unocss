@@ -9,10 +9,6 @@ const config = {
   preprocess: [sveltePreprocess(), optimizeImports()],
 
   kit: {
-    alias: {
-      $components: 'src/components',
-      $utils: 'src/utils'
-    },
     adapter: adapter({
       fallback: 'index.html'
     })
