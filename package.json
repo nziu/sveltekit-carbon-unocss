@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "carbon-components-svelte": "^0.67.1",
-    "carbon-icons-svelte": "^11.1.0",
+    "carbon-components-svelte": "^0.67.2",
+    "carbon-icons-svelte": "^11.2.0",
     "carbon-preprocess-svelte": "^0.9.1"
   },
   "devDependencies": {
@@ -24,7 +24,7 @@
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
-    "@unocss/core": "^0.44.5",
+    "@unocss/core": "^0.44.7",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -35,7 +35,7 @@
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4",
-    "unocss": "^0.44.5",
+    "unocss": "^0.44.7",
     "vite": "^3.0.2"
   }
 }
