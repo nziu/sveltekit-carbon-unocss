@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { logout } from '$lib/common';
+  import { logout } from '$lib/api';
   import {
     Button,
     Header,
@@ -75,7 +75,7 @@
     bind:open={isPopoverOpen}
     closeOnOutsideClick
     align="bottom-right"
-    class="pt-1px"
+    class="pt-1px mr-3rem"
   >
     <Button icon={Logout} kind="secondary" on:click={logout}>登出</Button>
   </Popover>
