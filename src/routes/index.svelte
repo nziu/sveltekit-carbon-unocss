@@ -1,1 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
+<svelte:head>
+  <title>Index</title>
+</svelte:head>
+
+<h1>Index</h1>
