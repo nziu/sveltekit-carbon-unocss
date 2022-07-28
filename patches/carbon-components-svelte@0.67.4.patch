@@ -1,0 +1,25 @@
+diff --git a/src/Notification/NotificationButton.svelte b/src/Notification/NotificationButton.svelte
+index 63e1d3b90f37320999bef007e3b0486f7bc1cf67..18a9d8820dc637208bd170c5f82d6fd1e47bfb07 100644
+--- a/src/Notification/NotificationButton.svelte
++++ b/src/Notification/NotificationButton.svelte
+@@ -40,6 +40,7 @@
+     this="{icon}"
+     size="{20}"
+     title="{title}"
+-    class="bx--{notificationType}-notification__close-icon"
++    class="{notificationType === 'toast' && 'bx--toast-notification__close-icon'}
++    {notificationType === 'inline' && 'bx--inline-notification__close-icon'}"
+   />
+ </button>
+diff --git a/src/Notification/NotificationIcon.svelte b/src/Notification/NotificationIcon.svelte
+index 8e2d61b68861470550e5123b07551e33c3025986..bbf8b250fadb6264ab9e8d88ef4c3b478c43eb77 100644
+--- a/src/Notification/NotificationIcon.svelte
++++ b/src/Notification/NotificationIcon.svelte
+@@ -35,5 +35,6 @@
+   this="{icons[kind]}"
+   size="{20}"
+   title="{iconDescription}"
+-  class="bx--{notificationType}-notification__icon"
++  class="{notificationType === 'toast' && 'bx--toast-notification__icon'}
++  {notificationType === 'inline' && 'bx--inline-notification__icon'}"
+ />

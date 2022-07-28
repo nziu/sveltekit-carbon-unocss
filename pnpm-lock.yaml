@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  carbon-components-svelte@0.67.4:
+    hash: qtqod653l3xbilaodx6qv5lbvm
+    path: patches/carbon-components-svelte@0.67.4.patch
+
 specifiers:
   '@sveltejs/adapter-static': next
   '@sveltejs/kit': next
@@ -25,7 +30,7 @@ specifiers:
 
 dependencies:
   axios: 0.27.2
-  carbon-components-svelte: 0.67.4
+  carbon-components-svelte: 0.67.4_qtqod653l3xbilaodx6qv5lbvm
   carbon-icons-svelte: 11.2.0
   carbon-preprocess-svelte: 0.9.1_svelte@3.49.0
 
@@ -602,11 +607,12 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /carbon-components-svelte/0.67.4:
+  /carbon-components-svelte/0.67.4_qtqod653l3xbilaodx6qv5lbvm:
     resolution: {integrity: sha512-+YbPAYInOQyT6bAVPPdtZ18Zm6oTHYOl+gTzO517QebDzz+Czf+HJiyJnlAkpz9PMOf3sCAhB9JiojO+auuEMQ==}
     dependencies:
       flatpickr: 4.6.9
     dev: false
+    patched: true
 
   /carbon-icons-svelte/11.2.0:
     resolution: {integrity: sha512-nbqCEKoZA5EzT2Lr8vNYnfWcDl5GnFFLnbD861U32g9cNe7D7nmQKx4T+goFp5AoY60OyAgKUNJov8LwNEkhbg==}
